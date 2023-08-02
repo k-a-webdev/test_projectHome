@@ -10,7 +10,7 @@
 body {
     width: 100%;
     h1 {
-        font-size: 4vw;
+        font-size: 3.5vw;
         font-weight: 300;
         color: #BDBDBD;
     }
@@ -223,8 +223,7 @@ header {
 
         img {
             margin: 15px;
-            width: 270px;
-            max-width: 20vw;
+            width: 19vw;
         }
 
         div {
@@ -307,6 +306,10 @@ header {
             grid-column-end: 4;
             display: flex;
             flex-wrap: nowrap;
+
+            .project {
+                flex: 1;
+            }
 
             img {
                 height: 100%;
