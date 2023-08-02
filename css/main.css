@@ -505,7 +505,7 @@ footer .footer__bott {
   .header__right ul {
     z-index: 9;
     height: 100vh;
-    width: 25%;
+    width: 40%;
     position: fixed;
     top: 0;
     right: 0;
@@ -517,7 +517,7 @@ footer .footer__bott {
     display: none !important;
   }
   .header__right ul li {
-    font-size: 64px;
+    font-size: 22px !important;
     margin-bottom: 30px;
   }
   .header__right ul.active {
@@ -630,6 +630,12 @@ footer .footer__bott {
   }
   header .header__toggle {
     right: 10px !important;
+  }
+  header .header__right ul {
+    width: 100% !important;
+  }
+  header .header__right ul li {
+    font-size: 30px !important;
   }
   main {
     padding: 0 10px;
