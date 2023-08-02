@@ -135,11 +135,12 @@ header {
             h1 {
                 text-transform: uppercase;
                 font-weight: 700;
-                opacity: 1;
 
                 &:first-child {
-                    opacity: 0.5;
                     font-weight: 300;
+                }
+                &:last-child {
+                    color: #000;
                 }
             }
         }

@@ -122,11 +122,12 @@ header .header__right ul li.active {
 .banner .banner__left .banner__title h1 {
   text-transform: uppercase;
   font-weight: 700;
-  opacity: 1;
 }
 .banner .banner__left .banner__title h1:first-child {
-  opacity: 0.5;
   font-weight: 300;
+}
+.banner .banner__left .banner__title h1:last-child {
+  color: #000;
 }
 .banner .banner__left .banner__slider_nav {
   display: flex;
