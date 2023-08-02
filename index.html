@@ -1,5 +1,5 @@
 <!-- 22:30 - 02:26 -->
-<!-- 11:00  -->
+<!-- 11:00 - 13:30  -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -22,17 +22,17 @@
 
             <div class="header__right">
                 <ul>
-                    <li>Главная</li>
-                    <li>Галерея</li>
-                    <li>Проекты</li>
-                    <li>Сертификаты</li>
-                    <li>Контакты</li>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">Галерея</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#">Сертификаты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
                 </ul>
             </div>
         </header>
 
         <main>
-            <div class="banner">
+            <div class="banner" id="home">
                 <div class="banner__left">
                     <div></div>
                     <div class="banner__title">
@@ -48,26 +48,7 @@
                                 <img src="./img/arrow.svg" alt="Arrow" />
                             </div>
                         </div>
-                        <div class="slider_nav__pages">
-                            01
-                            <svg
-                                width="34"
-                                height="33"
-                                viewBox="0 0 34 33"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <line
-                                    y1="-1"
-                                    x2="43.8219"
-                                    y2="-1"
-                                    transform="matrix(-0.706805 0.707408 -0.706805 -0.707408 31.9284 0)"
-                                    stroke="#E0E0E0"
-                                    stroke-width="2"
-                                />
-                            </svg>
-                            02
-                        </div>
+                        <div class="slider_nav__pages"></div>
                     </div>
                 </div>
 
@@ -75,22 +56,49 @@
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="./img/banner_img.png" alt="Banner img" />
+                                <img
+                                    src="./img/banner_img.png"
+                                    alt="Banner img"
+                                />
                             </div>
                             <div class="swiper-slide">
-                                <img src="./img/contact_img.png" alt="Banner img" />
+                                <img
+                                    src="./img/banner_img.png"
+                                    alt="Banner img"
+                                />
                             </div>
                         </div>
                     </div>
-                    
+
                     <button class="main_btn">
-                        Вернуться
-                        <img src="./img/arrow.svg" alt="Arrow" />
+                        Взглянуть
+                        <div class="arrow">
+                            <svg
+                                width="25"
+                                height="24"
+                                viewBox="0 0 25 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M3.93521 11.5C3.93521 11.2239 4.15907 11 4.43521 11L20.4352 11C20.7114 11 20.9352 11.2239 20.9352 11.5C20.9352 11.7761 20.7114 12 20.4352 12L4.43521 12C4.15907 12 3.93521 11.7761 3.93521 11.5Z"
+                                    fill="#333333"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M16.5817 7.64645C16.7769 7.45118 17.0935 7.45118 17.2888 7.64645L21.1423 11.5L17.2888 15.3536C17.0935 15.5488 16.7769 15.5488 16.5817 15.3536C16.3864 15.1583 16.3864 14.8417 16.5817 14.6464L19.7281 11.5L16.5817 8.35355C16.3864 8.15829 16.3864 7.84171 16.5817 7.64645Z"
+                                    fill="#333333"
+                                />
+                            </svg>
+                        </div>
                     </button>
                 </div>
             </div>
 
-            <div class="about">
+            <div class="about" id="about">
                 <div class="about__imgs">
                     <div>
                         <img src="./img/about_img1.png" alt="About img" />
@@ -117,7 +125,28 @@
 
                     <buttin class="main_btn">
                         Читать
-                        <img src="./img/arrow.svg" alt="Arrow" />
+                        <div class="arrow">
+                            <svg
+                                width="25"
+                                height="24"
+                                viewBox="0 0 25 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M3.93521 11.5C3.93521 11.2239 4.15907 11 4.43521 11L20.4352 11C20.7114 11 20.9352 11.2239 20.9352 11.5C20.9352 11.7761 20.7114 12 20.4352 12L4.43521 12C4.15907 12 3.93521 11.7761 3.93521 11.5Z"
+                                    fill="#333333"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M16.5817 7.64645C16.7769 7.45118 17.0935 7.45118 17.2888 7.64645L21.1423 11.5L17.2888 15.3536C17.0935 15.5488 16.7769 15.5488 16.5817 15.3536C16.3864 15.1583 16.3864 14.8417 16.5817 14.6464L19.7281 11.5L16.5817 8.35355C16.3864 8.15829 16.3864 7.84171 16.5817 7.64645Z"
+                                    fill="#333333"
+                                />
+                            </svg>
+                        </div>
                     </buttin>
                 </div>
             </div>
@@ -146,7 +175,7 @@
                 </div>
             </div>
 
-            <div class="projects">
+            <div class="projects" id="projects">
                 <h1>Наши проекты</h1>
 
                 <div class="projects__box">
@@ -161,26 +190,28 @@
                                 <h1>Досуговый центр</h1>
                                 <button class="main_btn">
                                     Подробнее
-                                    <svg
-                                        width="25"
-                                        height="24"
-                                        viewBox="0 0 25 24"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            clip-rule="evenodd"
-                                            d="M3.93521 11.5C3.93521 11.2239 4.15907 11 4.43521 11L20.4352 11C20.7114 11 20.9352 11.2239 20.9352 11.5C20.9352 11.7761 20.7114 12 20.4352 12L4.43521 12C4.15907 12 3.93521 11.7761 3.93521 11.5Z"
-                                            fill="#fff"
-                                        />
-                                        <path
-                                            fill-rule="evenodd"
-                                            clip-rule="evenodd"
-                                            d="M16.5817 7.64645C16.7769 7.45118 17.0935 7.45118 17.2888 7.64645L21.1423 11.5L17.2888 15.3536C17.0935 15.5488 16.7769 15.5488 16.5817 15.3536C16.3864 15.1583 16.3864 14.8417 16.5817 14.6464L19.7281 11.5L16.5817 8.35355C16.3864 8.15829 16.3864 7.84171 16.5817 7.64645Z"
-                                            fill="#fff"
-                                        />
-                                    </svg>
+                                    <div class="arrow">
+                                        <svg
+                                            width="25"
+                                            height="24"
+                                            viewBox="0 0 25 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M3.93521 11.5C3.93521 11.2239 4.15907 11 4.43521 11L20.4352 11C20.7114 11 20.9352 11.2239 20.9352 11.5C20.9352 11.7761 20.7114 12 20.4352 12L4.43521 12C4.15907 12 3.93521 11.7761 3.93521 11.5Z"
+                                                fill="#fff"
+                                            />
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M16.5817 7.64645C16.7769 7.45118 17.0935 7.45118 17.2888 7.64645L21.1423 11.5L17.2888 15.3536C17.0935 15.5488 16.7769 15.5488 16.5817 15.3536C16.3864 15.1583 16.3864 14.8417 16.5817 14.6464L19.7281 11.5L16.5817 8.35355C16.3864 8.15829 16.3864 7.84171 16.5817 7.64645Z"
+                                                fill="#fff"
+                                            />
+                                        </svg>
+                                    </div>
                                 </button>
                             </div>
                         </div>
@@ -200,30 +231,32 @@
 
                 <button class="main_btn">
                     Все проекты
-                    <svg
-                        width="25"
-                        height="24"
-                        viewBox="0 0 25 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M3.93521 11.5C3.93521 11.2239 4.15907 11 4.43521 11L20.4352 11C20.7114 11 20.9352 11.2239 20.9352 11.5C20.9352 11.7761 20.7114 12 20.4352 12L4.43521 12C4.15907 12 3.93521 11.7761 3.93521 11.5Z"
-                            fill="#fff"
-                        />
-                        <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M16.5817 7.64645C16.7769 7.45118 17.0935 7.45118 17.2888 7.64645L21.1423 11.5L17.2888 15.3536C17.0935 15.5488 16.7769 15.5488 16.5817 15.3536C16.3864 15.1583 16.3864 14.8417 16.5817 14.6464L19.7281 11.5L16.5817 8.35355C16.3864 8.15829 16.3864 7.84171 16.5817 7.64645Z"
-                            fill="#fff"
-                        />
-                    </svg>
+                    <div class="arrow">
+                        <svg
+                            width="25"
+                            height="24"
+                            viewBox="0 0 25 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M3.93521 11.5C3.93521 11.2239 4.15907 11 4.43521 11L20.4352 11C20.7114 11 20.9352 11.2239 20.9352 11.5C20.9352 11.7761 20.7114 12 20.4352 12L4.43521 12C4.15907 12 3.93521 11.7761 3.93521 11.5Z"
+                                fill="#fff"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M16.5817 7.64645C16.7769 7.45118 17.0935 7.45118 17.2888 7.64645L21.1423 11.5L17.2888 15.3536C17.0935 15.5488 16.7769 15.5488 16.5817 15.3536C16.3864 15.1583 16.3864 14.8417 16.5817 14.6464L19.7281 11.5L16.5817 8.35355C16.3864 8.15829 16.3864 7.84171 16.5817 7.64645Z"
+                                fill="#fff"
+                            />
+                        </svg>
+                    </div>
                 </button>
             </div>
 
-            <div class="contact">
+            <div class="contact" id="contact">
                 <h1>Связаться с нами</h1>
 
                 <div class="contact__box">
@@ -257,26 +290,28 @@
 
                             <button class="main_btn">
                                 Отправить
-                                <svg
-                                    width="25"
-                                    height="24"
-                                    viewBox="0 0 25 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M3.93521 11.5C3.93521 11.2239 4.15907 11 4.43521 11L20.4352 11C20.7114 11 20.9352 11.2239 20.9352 11.5C20.9352 11.7761 20.7114 12 20.4352 12L4.43521 12C4.15907 12 3.93521 11.7761 3.93521 11.5Z"
-                                        fill="#fff"
-                                    />
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M16.5817 7.64645C16.7769 7.45118 17.0935 7.45118 17.2888 7.64645L21.1423 11.5L17.2888 15.3536C17.0935 15.5488 16.7769 15.5488 16.5817 15.3536C16.3864 15.1583 16.3864 14.8417 16.5817 14.6464L19.7281 11.5L16.5817 8.35355C16.3864 8.15829 16.3864 7.84171 16.5817 7.64645Z"
-                                        fill="#fff"
-                                    />
-                                </svg>
+                                <div class="arrow">
+                                    <svg
+                                        width="25"
+                                        height="24"
+                                        viewBox="0 0 25 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M3.93521 11.5C3.93521 11.2239 4.15907 11 4.43521 11L20.4352 11C20.7114 11 20.9352 11.2239 20.9352 11.5C20.9352 11.7761 20.7114 12 20.4352 12L4.43521 12C4.15907 12 3.93521 11.7761 3.93521 11.5Z"
+                                            fill="#fff"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M16.5817 7.64645C16.7769 7.45118 17.0935 7.45118 17.2888 7.64645L21.1423 11.5L17.2888 15.3536C17.0935 15.5488 16.7769 15.5488 16.5817 15.3536C16.3864 15.1583 16.3864 14.8417 16.5817 14.6464L19.7281 11.5L16.5817 8.35355C16.3864 8.15829 16.3864 7.84171 16.5817 7.64645Z"
+                                            fill="#fff"
+                                        />
+                                    </svg>
+                                </div>
                             </button>
                         </form>
                     </div>

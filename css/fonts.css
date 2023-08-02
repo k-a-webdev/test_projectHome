@@ -28,3 +28,9 @@
     src: url("../font/TTHoves-ExtraBold.woff2") format("woff2");
     font-weight: 900;
 }
+
+@font-face {
+    font-family: SF Pro Display;
+    src: url("../font/SF-Pro-Display-Black.otf") format("opentype");
+    font-weight: 900;
+}

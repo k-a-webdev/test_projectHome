@@ -7,13 +7,12 @@
     scroll-behavior: smooth;
     font-family: "TT Hoves", sans-serif, system-ui;
 }
-
 body {
     width: 100%;
     h1 {
-        font-size: 64px;
-        opacity: 0.4;
+        font-size: 4vw;
         font-weight: 300;
+        color: #BDBDBD;
     }
     a {
         text-decoration: none;
@@ -32,7 +31,15 @@ header {
     display: flex;
     align-items: center;
     position: fixed;
-    // background-color: #fff;
+    background-color: #fff;
+    z-index: 999;
+    transition: 0.2s ease-in-out;
+
+    &.active {
+        position: fixed;
+        height: 90px;
+        border-bottom: #333333 1px solid;
+    }
 
     .header__left {
         width: 400px;
@@ -49,10 +56,17 @@ header {
             li {
                 text-transform: uppercase;
                 margin-right: 60px;
+                color: #333333;
+                font-weight: 400;
+                font-size: 12px;
 
-                &:first-child {
-                    border-top: 1px solid #111;
-                    border-bottom: 1px solid #111;
+                &:hover {
+                    border-bottom: 1px solid #333333;
+                }
+
+                &.active {
+                    border-top: 1px solid #333333;
+                    border-bottom: 1px solid #333333;
                 }
             }
         }
@@ -76,6 +90,25 @@ header {
     justify-content: center;
     border: none;
     background-color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .arrow {
+        margin-left: 12px;
+        transition: transform 0.3s ease-in-out;
+
+    }
+
+    &:hover {
+        .arrow {
+            transform: translateX(5px);
+        }
+    }
 }
 
 .banner {
@@ -83,6 +116,7 @@ header {
     height: 100vh;
     padding-top: 102px;
     display: flex;
+    // flex-wrap: wrap;
     margin-bottom: 120px;
 
     .banner__left {
@@ -91,6 +125,7 @@ header {
         position: relative;
         display: grid;
         grid-template-rows: repeat(3, 1fr);
+        overflow: hidden;
 
         .banner__title {
             display: flex;
@@ -99,7 +134,6 @@ header {
 
             h1 {
                 text-transform: uppercase;
-                font-size: 64px;
                 font-weight: 700;
                 opacity: 1;
 
@@ -127,6 +161,7 @@ header {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    cursor: pointer;
 
                     &.btn_prev {
                         margin-right: 23px;
@@ -188,6 +223,7 @@ header {
         img {
             margin: 15px;
             width: 270px;
+            max-width: 20vw;
         }
 
         div {
@@ -237,6 +273,10 @@ header {
 
             h1 {
                 font-weight: 900;
+                font-family: 'SF Pro Display', sans-serif, system-ui;
+                font-size: 200px;
+                opacity: 1;
+                color: #F2F2F2;
                 margin-right: 30px;
             }
         }
@@ -417,13 +457,18 @@ footer {
                 ul {
                     box-sizing: border-box;
                     height: auto;
-                    max-height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
+                    display: grid;
+                    grid-template-rows: repeat(3, 1fr);
+                    align-items: center;
 
                     li {
-                        display: flex;
+                        display: grid;
+                        grid-template-columns: 30px 1fr;
+
+                        img {
+                            height: 16px;
+                            margin-right: 10px;
+                        }
                     }
                 }
             }

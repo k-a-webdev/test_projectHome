@@ -11,9 +11,9 @@ body {
   width: 100%;
 }
 body h1 {
-  font-size: 64px;
-  opacity: 0.4;
+  font-size: 4vw;
   font-weight: 300;
+  color: #BDBDBD;
 }
 body a {
   text-decoration: none;
@@ -31,6 +31,14 @@ header {
   display: flex;
   align-items: center;
   position: fixed;
+  background-color: #fff;
+  z-index: 999;
+  transition: 0.2s ease-in-out;
+}
+header.active {
+  position: fixed;
+  height: 90px;
+  border-bottom: #333333 1px solid;
 }
 header .header__left {
   width: 400px;
@@ -46,10 +54,16 @@ header .header__right ul {
 header .header__right ul li {
   text-transform: uppercase;
   margin-right: 60px;
+  color: #333333;
+  font-weight: 400;
+  font-size: 12px;
 }
-header .header__right ul li:first-child {
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
+header .header__right ul li:hover {
+  border-bottom: 1px solid #333333;
+}
+header .header__right ul li.active {
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
 }
 
 .logo {
@@ -69,6 +83,20 @@ header .header__right ul li:first-child {
   justify-content: center;
   border: none;
   background-color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_btn .arrow {
+  margin-left: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+.main_btn:hover .arrow {
+  transform: translateX(5px);
 }
 
 .banner {
@@ -84,6 +112,7 @@ header .header__right ul li:first-child {
   position: relative;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
+  overflow: hidden;
 }
 .banner .banner__left .banner__title {
   display: flex;
@@ -92,7 +121,6 @@ header .header__right ul li:first-child {
 }
 .banner .banner__left .banner__title h1 {
   text-transform: uppercase;
-  font-size: 64px;
   font-weight: 700;
   opacity: 1;
 }
@@ -117,6 +145,7 @@ header .header__right ul li:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .banner .banner__left .banner__slider_nav .slider_nav__buttons .slider_nav__btn.btn_prev {
   margin-right: 23px;
@@ -168,6 +197,7 @@ header .header__right ul li:first-child {
 .about .about__imgs img {
   margin: 15px;
   width: 270px;
+  max-width: 20vw;
 }
 .about .about__imgs div {
   display: flex;
@@ -209,6 +239,10 @@ header .header__right ul li:first-child {
 }
 .main-goals .main-goals__goals div h1 {
   font-weight: 900;
+  font-family: "SF Pro Display", sans-serif, system-ui;
+  font-size: 200px;
+  opacity: 1;
+  color: #F2F2F2;
   margin-right: 30px;
 }
 
@@ -361,13 +395,17 @@ footer .footer__top .footer__info .footer__info__links li {
 footer .footer__top .footer__info .footer__info__contact ul {
   box-sizing: border-box;
   height: auto;
-  max-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
 }
 footer .footer__top .footer__info .footer__info__contact ul li {
-  display: flex;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+footer .footer__top .footer__info .footer__info__contact ul li img {
+  height: 16px;
+  margin-right: 10px;
 }
 footer .footer__top .footer__social {
   color: #fff;
