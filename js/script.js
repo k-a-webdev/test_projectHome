@@ -30,6 +30,16 @@ const swiper = new Swiper(".swiper", {
     },
 });
 
+// Animation
+const wow = new WOW({
+    boxClass: "wow",
+    animateClass: "animated",
+    offset: 10,
+    mobile: true,
+    live: true,
+});
+wow.init();
+
 // Active header
 const header = document.querySelector("header");
 const banner = document.querySelector("#home");
@@ -47,6 +57,7 @@ const clearHeaderItems = () => {
     });
 };
 
+if (window.scrollY > header.getBoundingClientRect().top + 1) header.classList.add('active');
 document.addEventListener("scroll", function () {
     header.classList.toggle(
         "active",
@@ -62,19 +73,30 @@ document.addEventListener("scroll", function () {
 
     if (homeTop <= 0) {
         clearHeaderItems();
-        headerItems[0].classList.add("active")
+        headerItems[0].classList.add("active");
     }
-    if (aboutTop <= 500 && (aboutTop + about.querySelector('h1').clientHeight <= window.innerHeight)) {
+    if (
+        aboutTop <= 500 &&
+        aboutTop + about.querySelector("h1").clientHeight <= window.innerHeight
+    ) {
         clearHeaderItems();
         headerItems[1].classList.add("active");
     }
-    if (projectsTop <= 500 && (projectsTop + projects.querySelector('h1').clientHeight <= window.innerHeight)) {
-        console.log(projectsTop)
+    if (
+        projectsTop <= 500 &&
+        projectsTop + projects.querySelector("h1").clientHeight <=
+            window.innerHeight
+    ) {
+        console.log(projectsTop);
 
         clearHeaderItems();
         headerItems[2].classList.add("active");
     }
-    if (contactTop <= 600 && (contactTop + contact.querySelector('h1').clientHeight <= window.innerHeight)) {
+    if (
+        contactTop <= 600 &&
+        contactTop + contact.querySelector("h1").clientHeight <=
+            window.innerHeight
+    ) {
         clearHeaderItems();
         headerItems[4].classList.add("active");
     }

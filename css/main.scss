@@ -18,6 +18,7 @@ body {
         text-decoration: none;
         color: #333333;
     }
+    overflow-x: hidden;
 }
 
 main {
@@ -32,12 +33,13 @@ header {
     display: flex;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
     background-color: #fff;
     z-index: 999;
     transition: 0.2s ease-in-out;
 
     &.active {
-        position: fixed;
         height: 90px;
         border-bottom: #333333 1px solid;
     }
@@ -140,7 +142,7 @@ header {
                     font-weight: 300;
                 }
                 &:last-child {
-                    color: #000;
+                    color: #333333;
                 }
             }
         }

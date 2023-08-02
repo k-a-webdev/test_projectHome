@@ -6,6 +6,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Project Home</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <link rel="stylesheet" href="./css/main.css" />
         <link
             rel="stylesheet"
@@ -22,7 +26,7 @@
 
             <div class="header__right">
                 <ul>
-                    <li><a href="#home">Главная</a></li>
+                    <li class="active"><a href="#home">Главная</a></li>
                     <li><a href="#about">Галерея</a></li>
                     <li><a href="#projects">Проекты</a></li>
                     <li><a href="#">Сертификаты</a></li>
@@ -33,7 +37,7 @@
 
         <main>
             <div class="banner" id="home">
-                <div class="banner__left">
+                <div class="banner__left wow animate__fadeInLeft" data-wow-duration="1s">
                     <div></div>
                     <div class="banner__title">
                         <h1>Project</h1>
@@ -52,7 +56,7 @@
                     </div>
                 </div>
 
-                <div class="banner__right">
+                <div class="banner__right wow animate__fadeInRight" data-wow-duration="1s">
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -99,7 +103,7 @@
             </div>
 
             <div class="about" id="about">
-                <div class="about__imgs">
+                <div class="about__imgs wow animate__fadeIn" data-wow-duration="1s">
                     <div>
                         <img src="./img/about_img1.png" alt="About img" />
                         <img src="./img/about_img2.png" alt="About img" />
@@ -110,7 +114,7 @@
                     </div>
                 </div>
 
-                <div class="about__text">
+                <div class="about__text wow animate__fadeInUp" data-wow-duration="1s">
                     <h1>О компании</h1>
 
                     <p>
@@ -153,10 +157,10 @@
             <!-- Отступы картинки +30px, но это должен быть один блок -->
 
             <div class="main-goals">
-                <h1>Основные задачи</h1>
+                <h1 class="wow animate__fadeInLeftBig" data-wow-duration="1s">Основные задачи</h1>
 
                 <div class="main-goals__goals">
-                    <div>
+                    <div class="wow animate__fadeInLeft" data-wow-duration="1s">
                         <h1>1</h1>
                         <p>
                             Создание комфортных условий и повышение качества
@@ -164,7 +168,7 @@
                         </p>
                     </div>
 
-                    <div>
+                    <div class="wow animate__fadeInRight" data-wow-duration="1s">
                         <h1>2</h1>
                         <p>
                             Постоянно совершенствовать качество предоставляемых
@@ -176,11 +180,11 @@
             </div>
 
             <div class="projects" id="projects">
-                <h1>Наши проекты</h1>
+                <h1 class="wow animate__fadeInLeftBig" data-wow-duration="1s">Наши проекты</h1>
 
                 <div class="projects__box">
                     <div>
-                        <div class="project">
+                        <div class="project wow animate__zoomIn" data-wow-duration="1s">
                             <img
                                 src="./img/project_img1.png"
                                 alt="Project img"
@@ -215,18 +219,18 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="project">
+                        <div class="project wow animate__zoomIn" data-wow-duration="1s">
                             <img
                                 src="./img/project_img2.png"
                                 alt="Project img"
                             />
                         </div>
                     </div>
-                    <img src="./img/project_img3.png" alt="Project img" />
+                    <img src="./img/project_img3.png" alt="Project img" class="wow animate__zoomIn" data-wow-duration="1s" />
 
-                    <img src="./img/project_img4.png" alt="Project img" />
+                    <img src="./img/project_img4.png" alt="Project img" class="wow animate__zoomIn" data-wow-duration="1s" />
 
-                    <img src="./img/project_img5.png" alt="Project img" />
+                    <img src="./img/project_img5.png" alt="Project img" class="wow animate__zoomIn" data-wow-duration="1s" />
                 </div>
 
                 <button class="main_btn">
@@ -257,10 +261,10 @@
             </div>
 
             <div class="contact" id="contact">
-                <h1>Связаться с нами</h1>
+                <h1 class="wow animate__fadeInLeftBig" data-wow-duration="1s">Связаться с нами</h1>
 
                 <div class="contact__box">
-                    <div class="contact__left">
+                    <div class="contact__left wow animate__fadeInBottomLeft" data-wow-duration="1s">
                         <form>
                             <input type="text" placeholder="Имя" />
                             <input
@@ -316,7 +320,7 @@
                         </form>
                     </div>
 
-                    <div class="contact__right">
+                    <div class="contact__right wow animate__zoomIn" data-wow-duration="1s">
                         <img src="./img/contact_img.png" alt="Contact img" />
                     </div>
                 </div>
@@ -324,7 +328,7 @@
         </main>
 
         <footer>
-            <div class="footer__top">
+            <div class="footer__top wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="logo">
                     <img src="./img/logo_white.png" alt="Logo" />
                 </div>
@@ -485,6 +489,7 @@
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="./js/wow.min.js"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>

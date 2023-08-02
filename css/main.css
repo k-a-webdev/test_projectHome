@@ -9,6 +9,7 @@
 
 body {
   width: 100%;
+  overflow-x: hidden;
 }
 body h1 {
   font-size: 3.5vw;
@@ -32,12 +33,13 @@ header {
   display: flex;
   align-items: center;
   position: fixed;
+  top: 0;
+  left: 0;
   background-color: #fff;
   z-index: 999;
   transition: 0.2s ease-in-out;
 }
 header.active {
-  position: fixed;
   height: 90px;
   border-bottom: #333333 1px solid;
 }
@@ -127,7 +129,7 @@ header .header__right ul li.active {
   font-weight: 300;
 }
 .banner .banner__left .banner__title h1:last-child {
-  color: #000;
+  color: #333333;
 }
 .banner .banner__left .banner__slider_nav {
   display: flex;
