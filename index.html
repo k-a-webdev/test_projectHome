@@ -1,5 +1,7 @@
 <!-- 22:30 - 02:26 -->
-<!-- 11:00 - 13:30  -->
+<!-- 11:00 - 13:30 -->
+<!-- 15:00 - 16:00 -->
+<!-- 17:00 - 19:00 -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -25,8 +27,9 @@
             </div>
 
             <div class="header__right">
+                <div class="header__toggle" onclick="toggleMenu()"></div>
                 <ul>
-                    <li class="active"><a href="#home">Главная</a></li>
+                    <li><a href="#home" class="active">Главная</a></li>
                     <li><a href="#about">Галерея</a></li>
                     <li><a href="#projects">Проекты</a></li>
                     <li><a href="#">Сертификаты</a></li>
@@ -60,16 +63,14 @@
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img
-                                    src="./img/banner_img.png"
-                                    alt="Banner img"
-                                />
+                                <div class="slide-1">
+
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <img
-                                    src="./img/banner_img.png"
-                                    alt="Banner img"
-                                />
+                                <div class="slide-2">
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -271,6 +272,7 @@
                                 type="text"
                                 placeholder="Номер телефона*"
                                 required
+                                pattern="[0-9]{9,11}"
                             />
                             <input
                                 type="email"

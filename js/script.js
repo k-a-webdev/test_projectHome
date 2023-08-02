@@ -49,7 +49,7 @@ const bannerY = banner.getBoundingClientRect().bottom;
 const about = document.querySelector("#about");
 const projects = document.querySelector("#projects");
 const contact = document.querySelector("#contact");
-const headerItems = header.querySelectorAll("li");
+const headerItems = header.querySelectorAll("a");
 
 const clearHeaderItems = () => {
     headerItems.forEach((el) => {
@@ -87,8 +87,6 @@ document.addEventListener("scroll", function () {
         projectsTop + projects.querySelector("h1").clientHeight <=
             window.innerHeight
     ) {
-        console.log(projectsTop);
-
         clearHeaderItems();
         headerItems[2].classList.add("active");
     }
@@ -101,3 +99,10 @@ document.addEventListener("scroll", function () {
         headerItems[4].classList.add("active");
     }
 });
+
+function toggleMenu() {
+    const menuToggle = document.querySelector(".header__toggle");
+    const menu = header.querySelector("ul");
+    menuToggle.classList.toggle("active");
+    menu.classList.toggle("active");
+}
